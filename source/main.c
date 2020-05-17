@@ -17,7 +17,7 @@ void ADC_init() {
 	ADCSRA |= (1 << ADEN) | (1 << ADSC) | (1 << ADATE);
 }
 
-unsigned short max = 0x400;
+unsigned short max = 0x405;
 unsigned short x = 0x00;
 unsigned short threshold = 0x00;
 
