@@ -31,21 +31,6 @@ int main(void)
 	DDRD = 0xFF; PORTD = 0x00;
 	ADC_init();
 
-<<<<<<< HEAD
-    while (1)
-    {
-        x = ADC;
-        if (x >= (max / 2))
-        {
-            PORTB = 0x00;
-        }
-        else
-        {
-            PORTB = 0x01;
-        }
-    }
-}
-=======
 	while (1)
 	{
 		x = ADC;
@@ -83,4 +68,3 @@ int main(void)
 		}
 	}
 }
->>>>>>> f8b78603275b075e4cffa68a5625991456934401
