@@ -17,6 +17,7 @@ void ADC_init() {
 }
 
 unsigned short x = 0x00;
+unsigned short max = 0x3BF;
 
 int main(void)
 {
@@ -28,7 +29,13 @@ int main(void)
     while (1)
     {
         x = ADC;
-        PORTB = (char)x;
-        PORTD = (char)(x >> 8);
+        if (x >= (max / 2))
+        {
+            PORTB = 0x00;
+        }
+        else
+        {
+            PORTB = 0x01;
+        }
     }
 }

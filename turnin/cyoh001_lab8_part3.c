@@ -17,7 +17,7 @@ void ADC_init() {
 }
 
 unsigned short x = 0x00;
-unsigned short max = 0x0C7;
+unsigned short max = 0x3BF;
 
 int main(void)
 {
