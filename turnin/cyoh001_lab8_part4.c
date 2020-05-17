@@ -31,7 +31,7 @@ int main(void)
 
 	while (1)
 	{
-		x = ~ADC;
+		x = ADC;
 		if (x <= threshold)
 		{
 			PORTB = 0x01;
