@@ -23,7 +23,7 @@ unsigned short threshold = 0x00;
 
 int main(void)
 {
-	threshold = (max / 8);
+	threshold = (~max / 8);
 	DDRA = 0x00; PORTA = 0xFF;
 	DDRB = 0xFF; PORTB = 0x00;
 	DDRD = 0xFF; PORTD = 0x00;
@@ -31,7 +31,7 @@ int main(void)
 
 	while (1)
 	{
-		x = ~ADC;
+		x = ADC;
 		if (x <= threshold)
 		{
 			PORTB = 0x01;
