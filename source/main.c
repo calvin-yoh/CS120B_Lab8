@@ -11,8 +11,6 @@
 #include <avr/interrupt.h>
 #ifdef _SIMULATE_
 #include "simAVRHeader.h"
-#include "timer.h"
-#include "io.h"
 #endif
 
 void ADC_init() {
