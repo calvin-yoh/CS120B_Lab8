@@ -31,11 +31,11 @@ int main(void)
         x = ADC;
         if (x >= (max / 2))
         {
-            PORTB = 0x00;
+            PORTB = 0x01;
         }
         else
         {
-            PORTB = 0x01;
+            PORTB = 0x00;
         }
     }
 }
